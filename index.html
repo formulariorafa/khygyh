@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<title>Formulário em HTML 5</title>
+	</head>
+<body>
+
+	<h1>Tipos de entrada HTML 5</h1>
+	<ol>
+	<li>Texto do tipo de entrada; </li>
+	<li>Senha;</li>
+	<li>Entrada Enviar;</li>
+	<li>Reinicialização do tipo de entrada;</li>
+	<li>Tipo de entrada Rádio;</li>
+	<li>Cor do tipo de entrada;</li>
+	<li>Data do tipo de entrada;</li>
+	<li>Tipo de entrada Datetime-local; </li>
+	<li>E-mai; </li>
+	<li>Entrada Mês;</li>
+	<li>Entrada Telefone; </li>
+	<li>Entrada Hora; </li>
+	<li>Entrada Semana; </li>
+	<li> URL do tipo entrada; </li>
+	</ol>
+
+<h2> Texto do tipo de entrada</h2>
+<p><strong>input type="text"</strong>  Vai definir um campo de entrada de texto de uma linha:</p>
+<form>
+
+<br>
+
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+<br>
+
+<h2> Digite a senha</h2>
+<p><strong>input type="password"</strong>  Vai definir um campo de senha:</p>
+<form>
+  <label for="username">Nome:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Senha:</label><br>
+  <input type="password" id="pwd" name="pwd">
+</form>
+
+<br>
+
+<h2> Tipo de Entrada Enviar </h2>
+<p><strong> "input type="submit" </strong> Vai definir um botão para enviar dados de formulário para um manipulador de formulário:</p>
+<form action="/action_page.php">
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname" value="Nome"><br>
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname" value="Sobrenome"><br><br>
+  <input type="submit" value="Enviar">
+</form>
+
+<br>
+
+<h2> Reinicialização do tipo de entrada </h2>
+<p><strong> input type="reset" </strong> Vai definir um botão de redefinição que irá redefinir todos os valores do formulário para seus valores padrão:</p>
+<form action="/action_page.php">
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname" value="Nome"><br>
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname" value="Sobrenome"><br><br>
+  <input type="submit" value="Enviar">
+  <input type="Reset">
+</form>
+
+<br>
+
+<h2> Tipo de entrada Rádio</h2>
+<p><strong> input type="radio" </strong> Vai definir um botão de opção: </p>
+<form>
+
+<br>
+
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">1</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">2</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">3</label>
+</form>
+
+<br>
+
+<h2> Cor do tipo de entrada </h2>
+<p> <strong> input type="color" </strong> Vai definir os campos de entrada que devem conter uma cor: </p>
+<form>
+  <label for="favcolor">Selecione uma cor:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+
+<br>
+
+<h2> Data do tipo de entrada </h2>
+<p> <strong> input type="date" </strong> É usado para campos de entrada que devem conter uma data: </p>
+<form>
+  <label for="birthday">Data Nascimento:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+
+<br>
+
+<h2> Tipo de entrada Datetime-local </h2>
+<p> <strong> input type="datetime-local" </strong> Usado para especificar um campo de entrada de data e hora, sem fuso horário: </p>
+<form>
+  <label for="birthdaytime">Aniversário (data e hora):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+
+<br>
+
+<h2> Digite o e-mail do tipo </h2>
+<p> <strong> input type="email" </strong> É usado para campos de entrada que devem conter um endereço de e-mail: </p>
+<form>
+  <label for="email">Digite seu e-mail: </label>
+  <input type="email" id="email" name="email">
+</form>
+
+<br>
+
+<h2> Tipo de entrada Mês </h2>
+<p> <strong> input type="month" </strong> Permite ao usuário selecionar um mês e um ano: </p>
+<form>
+  <label for="bdaymonth">Data (mês e ano):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+
+<br>
+
+<h2> Tipo de entrada Telefone </h2>
+<p> <strong> input type="tel" </strong> É usado para campos de entrada que devem conter um número de telefone: </p>
+<form>
+  <label for="phone">Digite seu telefone:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+<br>
+
+<h2> Tipo de entrada Hora </h2>
+<p> <strong> input type="time" </strong> Permite ao usuário selecionar um horário (sem fuso horário): </p>
+<form>
+  <label for="appt">Selecione a hora:</label>
+  <input type="time" id="appt" name="appt">
+</form>
+
+<br>
+
+<h2> Tipo de entrada Semana </h2>
+<p> <strong> input type="week" </strong> Permite ao usuário selecionar uma semana e um ano: </p>
+<form>
+  <label for="week">Selecione a Semana:</label>
+  <input type="week" id="week" name="week">
+</form>
+
+<br>
+
+<h2> URL do tipo de entrada </h2>
+<p> <strong> input type="url" </strong> É usado para campos de entrada que devem conter um endereço URL: </p>
+<form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
